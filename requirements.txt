@@ -1,0 +1,7 @@
+# Morse Translator
+
+# Python standard library only.
+
+# Tkinter is included with standard Python installations.
+
+# No external dependencies are currently required.
