@@ -12,34 +12,29 @@
 # morse_validator - Validation for Morse Code input
 
 from .validator import (
-Validator,
-ValidationResult,
+    Validator,
+    ValidationResult,
 )
 
 from .english_validator import (
-validate_english,
-is_valid_english,
+    validate_english,
+    is_valid_english,
 )
 
 from .morse_validator import (
-validate_morse,
-is_valid_morse,
+    validate_morse,
+    is_valid_morse,
 )
 
-**all** = [
-
-```
-# General Validation
-"Validator",
-"ValidationResult",
-
-# English Validation
-"validate_english",
-"is_valid_english",
-
-# Morse Validation
-"validate_morse",
-"is_valid_morse",
-```
-
+__all__ = [
+    # General Validation
+    "Validator",
+    "ValidationResult",
+    # English Validation
+    "validate_english",
+    "is_valid_english",
+    # Morse Validation
+    "validate_morse",
+    "is_valid_morse",
 ]
+
