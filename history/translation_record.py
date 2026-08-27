@@ -227,12 +227,7 @@ class TranslationRecord:
     # Display Formatting
 
     def summary(self) -> str:
-        """
-        Return a short human-readable description of the record.
-
-        Returns:
-            A concise summary suitable for history displays.
-        """
+        # Return a short human-readable description of the record
 
         return (
             f"{self.direction}: "
@@ -240,16 +235,12 @@ class TranslationRecord:
         )
 
     def __str__(self) -> str:
-        """
-        Return a readable representation of the translation record.
-        """
+        # Return a readable representation of the translation record
 
         return self.summary()
 
     def __repr__(self) -> str:
-        """
-        Return a developer-oriented representation of the record.
-        """
+        # Return a developer-oriented representation of the record
 
         return (
             "TranslationRecord("
