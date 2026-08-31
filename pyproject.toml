@@ -1,0 +1,105 @@
+# pyproject.toml
+# Project configuration for the Morse Translator
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "morse-translator"
+version = "1.0.0"
+description = "A Python-based Morse Code translator supporting English-to-Morse and Morse-to-English translation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+authors = [
+    { name = "Morse Translator Development Team" }
+]
+
+keywords = [
+    "morse",
+    "morse-code",
+    "translator",
+    "encoding",
+    "decoding",
+    "python",
+    "tkinter",
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Text Processing",
+]
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+
+[project.scripts]
+morse-translator = "main:main"
+
+
+[tool.setuptools]
+packages = [
+    "core",
+    "validation",
+    "formatting",
+    "history",
+    "interface",
+    "utils",
+]
+
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+python_files = [
+    "test_*.py",
+]
+
+python_classes = [
+    "Test*",
+]
+
+python_functions = [
+    "test_*",
+]
+
+addopts = [
+    "-v",
+    "--tb=short",
+]
+
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+]
+
+ignore = [
+    "E501",
+]
